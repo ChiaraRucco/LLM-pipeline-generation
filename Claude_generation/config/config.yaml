@@ -1,0 +1,10 @@
+api_endpoints:
+  fetch_data: "https://api.tfl.gov.uk/Place/Meta/Categories"
+  post_data: "https://httpbin.org/post"
+
+logging:
+  level: "DEBUG"
+
+execution:
+  retries: 1
+  start_date: "2023-01-01"
