@@ -1,8 +1,11 @@
-from datetime import datetime
-import requests
 import time
 from airflow import DAG
+
 from airflow.operators.python import PythonOperator
+from datetime import datetime, timezone
+import requests
+import json
+import time
 
 import os
 from _scproxy import _get_proxy_settings

@@ -26,7 +26,7 @@ dag = DAG(
     'gen1_deepseek',
     default_args=default_args,
     description='ETL pipeline to fetch data from TFL API, transform, and post to another API',
-    schedule_interval='@daily',
+    schedule_interval=None,
 )
 
 # Function to fetch data from the TFL API
