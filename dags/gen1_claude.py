@@ -4,6 +4,8 @@ import time
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
+import os
+from _scproxy import _get_proxy_settings
 
 _get_proxy_settings()
 os.environ['NO_PROXY'] = '*'
@@ -46,7 +48,7 @@ default_args = {
 }
 
 dag = DAG(
-    'etl_dag',
+    'gen1_claude',
     default_args=default_args,
     description='An ETL pipeline that fetches data from an API, transforms it, and posts it to another API',
     schedule_interval=None,
