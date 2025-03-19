@@ -47,7 +47,7 @@ default_args = {
 }
 
 dag = DAG(
-    'gen1_copilot',
+    'gen1_claude',
     default_args=default_args,
     description='An ETL pipeline that fetches data from an API, transforms it, and posts it to another API',
     schedule_interval=None,
